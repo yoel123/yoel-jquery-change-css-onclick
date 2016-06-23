@@ -1,0 +1,101 @@
+<html>
+<head>
+ <script language="javascript" type="text/javascript" src="js/jqury.js"></script>
+ 
+<style>
+     #list { width:50%; margin:0 auto; padding:0px;}
+     #list li { list-style:none; display:block; width:100%; background-color:#D7D3E0; padding:5px; margin:5px;}
+    
+	 a{font-size: 2em;}
+	 li img
+	 {
+		max-width: 100%; 
+		display:block; 
+		height: auto;
+		padding-right: 10px;
+	 }
+	 
+	 #list.compact li { float:left; width:30%;}
+	 #list.compact{ margin:0; width:100%;}
+	.compact img
+	{
+		width:100%;
+	}
+</style>
+<script>
+$( document ).ready(function() {
+  yclick_class_change("#fullswitch","#list","compact",0);//remove class on click #fullswitch
+  yclick_class_change("#compactswitch","#list","compact",1);//add class on click compactswitch
+
+});
+
+function yclick_class_change(selector,ytarget,yclass,yaction)
+{
+  if(yaction ==0)
+  {
+    $(selector).click(function() {
+        $(ytarget).removeClass(yclass);
+     });
+  }
+  if(yaction ==1)
+  {
+    $(selector).click(function() {
+        $(ytarget).addClass(yclass);
+     });
+  }
+}//end yclick_class_change
+</script>
+</head>
+<body>
+  <a id="compactswitch" href="#">switch</a>
+<a id="fullswitch" href="#">full</a>
+
+<ul id="list">
+    <li>
+        <img src="img/ph.jpg" />
+        <p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum scelerisque metus, ac consectetur justo scelerisque ut. Aliquam condimentum ligula tortor. Aenean vel tortor sagittis, imperdiet lorem in, consectetur ipsum. Sed lobortis congue felis, in tempor nulla aliquet vel. In eu diam id est sagittis sodales. Ut ut porta urna. Aliquam non accumsan diam. Nam auctor nibh justo, efficitur rhoncus sem congue et. Duis et est at nibh interdum aliquet id quis nisi. Proin nibh lectus, luctus ut blandit pharetra, porta at enim.
+        </p>
+   </li>
+      <li>
+        <img src="img/ph.jpg" />
+		
+        <p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum scelerisque metus, ac consectetur justo scelerisque ut. Aliquam condimentum ligula tortor. Aenean vel tortor sagittis, imperdiet lorem in, consectetur ipsum. Sed lobortis congue felis, in tempor nulla aliquet vel. In eu diam id est sagittis sodales. Ut ut porta urna. Aliquam non accumsan diam. Nam auctor nibh justo, efficitur rhoncus sem congue et. Duis et est at nibh interdum aliquet id quis nisi. Proin nibh lectus, luctus ut blandit pharetra, porta at enim.
+        </p>
+   </li>
+      <li>
+        <img src="img/ph.jpg" />
+		
+        <p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum scelerisque metus, ac consectetur justo scelerisque ut. Aliquam condimentum ligula tortor. Aenean vel tortor sagittis, imperdiet lorem in, consectetur ipsum. Sed lobortis congue felis, in tempor nulla aliquet vel. In eu diam id est sagittis sodales. Ut ut porta urna. Aliquam non accumsan diam. Nam auctor nibh justo, efficitur rhoncus sem congue et. Duis et est at nibh interdum aliquet id quis nisi. Proin nibh lectus, luctus ut blandit pharetra, porta at enim.
+        </p>
+   </li>
+      <li>
+        <img src="img/ph.jpg" />
+		
+        <p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum scelerisque metus, ac consectetur justo scelerisque ut. Aliquam condimentum ligula tortor. Aenean vel tortor sagittis, imperdiet lorem in, consectetur ipsum. Sed lobortis congue felis, in tempor nulla aliquet vel. In eu diam id est sagittis sodales. Ut ut porta urna. Aliquam non accumsan diam. Nam auctor nibh justo, efficitur rhoncus sem congue et. Duis et est at nibh interdum aliquet id quis nisi. Proin nibh lectus, luctus ut blandit pharetra, porta at enim.
+        </p>
+   </li>
+      <li>
+       <img src="img/ph.jpg" />
+		 
+        <p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum scelerisque metus, ac consectetur justo scelerisque ut. Aliquam condimentum ligula tortor. Aenean vel tortor sagittis, imperdiet lorem in, consectetur ipsum. Sed lobortis congue felis, in tempor nulla aliquet vel. In eu diam id est sagittis sodales. Ut ut porta urna. Aliquam non accumsan diam. Nam auctor nibh justo, efficitur rhoncus sem congue et. Duis et est at nibh interdum aliquet id quis nisi. Proin nibh lectus, luctus ut blandit pharetra, porta at enim.
+        </p>
+   </li>
+      <li>
+        <img src="img/ph.jpg" />
+		
+        <p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum scelerisque metus, ac consectetur justo scelerisque ut. Aliquam condimentum ligula tortor. Aenean vel tortor sagittis, imperdiet lorem in, consectetur ipsum. Sed lobortis congue felis, in tempor nulla aliquet vel. In eu diam id est sagittis sodales. Ut ut porta urna. Aliquam non accumsan diam. Nam auctor nibh justo, efficitur rhoncus sem congue et. Duis et est at nibh interdum aliquet id quis nisi. Proin nibh lectus, luctus ut blandit pharetra, porta at enim.
+        </p>
+   </li>
+    
+</ul>
+
+
+
+</body>
+</html>
